@@ -1,0 +1,201 @@
+*{
+    scroll-behavior: smooth;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Arima Madurai', cursive;
+}
+nav{
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    background-color: rgb(180, 8, 8);
+}
+nav ul{
+    display: flex;
+    list-style-type: none;
+}
+nav li{
+    text-align: center;
+}
+nav a{
+    text-decoration: none;
+    color: rgb(15, 15, 15);
+    display: block;
+    padding: 15px;
+    font-size: 20px;
+    font-weight: 800;
+    transition: color 0.4s;
+}
+nav a:hover{
+    background-color: rgb(148, 7, 7);
+    color: rgb(248, 55, 55);
+}
+#intro{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    background-color: rgb(97, 92, 92);
+    background-image: url(https://wallpaperaccess.com/full/5651990.jpg);
+    background-attachment: scroll;
+    background-position: center;
+    background-size: cover;
+}
+#intro div{
+    text-align: center;
+    word-spacing: 10px;
+}
+#name{
+    font-size: 100px;
+    color: rgb(243, 243, 237);
+    font-weight: 400;
+    font-family: 'Staatliches', cursive;
+    letter-spacing: 3px;
+    animation-name: example;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+@keyframes example {
+    0%{color: rgb(240, 16, 16);}
+    25%{color: rgb(4, 230, 4);}
+    50%{color: rgb(8, 32, 248);}
+    75%{color: rgb(226, 17, 17);}
+    100%{color: rgb(4, 230, 4);}
+}
+#description{
+    font-size: 28px;
+    font-weight: 900;
+    color: rgb(247, 238, 157);
+    font-family: 'Lobster Two', cursive;
+}
+#project{
+    padding-top: 55px;
+    background-color: rgb(48, 49, 49);
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 40px;
+    border-bottom: 8px double black;
+}
+#project h1{
+    text-align: center;
+    color: rgb(245, 222, 171);
+    font-size: 30px ;
+    text-decoration: underline;
+}
+.project{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 40px;
+    margin-left: 25px;
+    margin-right: 25px;
+    padding: 40px;
+    background-color: rgb(39, 36, 36);
+    box-shadow: 1px 1px 10px 2px black;
+}
+.project img{
+    width: 350px;
+    height: 250px;
+    object-fit: cover;
+}
+.title{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: cornsilk;
+    transition: color 0.4s;
+}
+.project a{
+    text-decoration: none;
+    background-color: rgb(88, 86, 86);
+    border: 2px solid black;
+    transition: box-shadow 0.4s;
+}
+.project a:hover{
+    box-shadow: 0 4px 8px 0 rgb(5, 5, 5), 0 6px 20px 0 rgb(7, 7, 7);
+    border: 2px solid black;
+}
+.project a:hover span{
+    font-weight: bolder;
+    color: rgb(19, 19, 18);
+}
+.project a:hover .title{
+    color: rgb(248, 236, 72);
+}
+.info{
+    color: cornsilk;
+    max-width: 600px;
+    font-size: 25px;
+}
+span{
+    color: rgb(88, 86, 86);
+    font-size: 20px;
+    transition: color 0.4s ease-in-out;
+}
+@media (max-width: 800px) {
+    .project{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .info{
+        margin-top: 40px;
+        width: 100%;
+    }
+    @media (max-width: 420px) {
+        .project img{
+            width: 80vw;
+        }
+    }
+}
+#reach_me{
+    padding-top: 50px;
+    background-color: rgb(51, 112, 114);
+    height: 50vh;
+}
+#line{
+    font-size: 45px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+}
+#links{
+    font-size: 30px;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.prof-img{
+    object-position: center;
+}
+.prof{
+    text-decoration: none;
+}
+.prof span{
+    color: black;
+    font-size: 30px;
+}
+#links a:hover span{
+    color: rgb(250, 126, 25);
+}
+@media (max-width: 800px) {
+    #reach_me{
+        height: auto;
+    }
+    #links{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
